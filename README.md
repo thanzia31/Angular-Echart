@@ -1,59 +1,121 @@
-# EchartApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
 
-## Development server
 
-To start a local development server, run:
+# Angular EChart App
 
-```bash
-ng serve
+This project demonstrates how to integrate [Apache ECharts](https://echarts.apache.org/) into an Angular application using the `ngx-echarts` library. The app visualizes attendance data in multiple formats and includes a home page with introductory content about the system.
+
+---
+
+## 🚀 Project Setup & ECharts Integration
+
+### 1. Angular Setup
+
+- Created a new Angular standalone project:
+  ```bash
+  ng new EchartApp --standalone
+````
+
+* Installed ECharts and `ngx-echarts`:
+
+  ```bash
+  npm install echarts ngx-echarts
+  ```
+
+### 2. Integration
+
+* Imported `NgxEchartsModule` in the standalone component.
+* Used the `echarts` directive in the HTML template.
+* Created dynamic chart options using ECharts configuration.
+
+---
+
+## 🧩 Components
+
+### `HomeComponent`
+
+**Purpose**: Acts as the landing page for the application.
+
+**Functionality**:
+
+* Displays a brief description of the project.
+* Introduces users to the purpose and features of the app.
+* Provides a welcoming UI for better user experience.
+
+---
+
+### `EchartComponent`
+
+**Purpose**: Main component responsible for rendering ECharts-based visualizations.
+
+**Key Functionalities**:
+
+* Displays three chart types:
+
+  * Line chart: Overall attendance percentages.
+  * Bar chart: Number of present and absent days.
+  * Pie chart: Summary of attendance levels (Excellent, Good, Average, Poor).
+* A dropdown menu allows users to switch between chart types.
+* Uses mocked attendance data via `ChartServicesService`.
+
+---
+
+## 📊 Chart Switching
+
+Users can select chart types from a dropdown:
+
+```html
+<select (change)="onChartTypeChange($event)">
+  <option value="line">Line</option>
+  <option value="bar">Bar</option>
+  <option value="pie">Pie</option>
+</select>
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The component dynamically updates the chart configuration (`EChartsOption`) based on the selected type.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ⚠️ Challenges & Solutions
 
-```bash
-ng generate component component-name
+### 1. **Dynamic chart switching**
+
+* **Challenge**: Efficiently switching chart views.
+* **Solution**: Used a variable `selectedChart` and pre-defined config options.
+
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+│
+├── app/
+│   ├── components/
+│   │   ├── home/
+│   │   │   └── home.component.ts/html/css
+│   │   └── echart/
+│   │       └── echart.component.ts/html/css
+│   ├── services/
+│   │   └── chart-services.service.ts
+│   └── model/
+│       └── data.model.ts
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
+
+
+---
+
+## 🧑‍💻 Author
+
+[Thanzia31](https://github.com/thanzia31)
+
 ```
 
-## Building
+---
 
-To build the project run:
-
-```bash
-ng build
+Let me know if you want help committing this to your GitHub repo or want to generate a PDF version of this for documentation.
 ```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
