@@ -11,9 +11,9 @@ This project demonstrates how to integrate [Apache ECharts](https://echarts.apac
 
 ### 1. Angular Setup
 
-- Created a new Angular standalone project:
+- Created a new Angular project:
   ```bash
-  ng new EchartApp --standalone
+  ng new EchartApp    
   ```
 - Installed ECharts and `ngx-echarts`:
 
