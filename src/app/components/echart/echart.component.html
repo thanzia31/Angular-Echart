@@ -1,0 +1,25 @@
+<!--
+<hr>
+<div echarts [options] = "doughnutChart"></div>
+<br><br><br><hr>
+<div echarts [options] = "chartOptions"></div>
+<br><br><br><hr>
+<div echarts [options] ="stackedChart"></div>
+<br><br><br>
+-->
+<select (change)="onChartTypeChange($event)" class="chartSelector">
+    <option value="line">Line</option>
+    <option value="bar">Bar</option>
+    <option value="scatter">Scatter</option>
+    
+  </select>
+  
+
+<div echarts [options] = "selectedChart"></div>
+<br><br><br><hr>
+<div echarts [options] = "doughnutChart"></div>
+<br><br><br><hr>
+<div echarts [options] ="stackedChart"></div>
+<br><br><br>
+
+  
