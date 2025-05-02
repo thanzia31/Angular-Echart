@@ -114,7 +114,4 @@ src/
 
 ```
 
----
 
-Let me know if you want help committing this to your GitHub repo or want to generate a PDF version of this for documentation.
-```
