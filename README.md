@@ -7,14 +7,14 @@ This project demonstrates how to integrate [Apache ECharts](https://echarts.apac
 
 
 
-## 🚀 Project Setup & ECharts Integration
+##  Project Setup & ECharts Integration
 
 ### 1. Angular Setup
 
 - Created a new Angular standalone project:
-  
+  ```bash
   ng new EchartApp --standalone
-
+  ```
 - Installed ECharts and `ngx-echarts`:
 
   ```bash
@@ -29,7 +29,7 @@ This project demonstrates how to integrate [Apache ECharts](https://echarts.apac
 
 ---
 
-## 🧩 Components
+##  Components
 
 ### `HomeComponent`
 
