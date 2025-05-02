@@ -59,7 +59,7 @@ This project demonstrates how to integrate [Apache ECharts](https://echarts.apac
 
 ---
 
-## 📊 Chart Switching
+##  Chart Switching
 
 Users can select chart types from a dropdown:
 
@@ -75,7 +75,7 @@ The component dynamically updates the chart configuration (`EChartsOption`) base
 
 ---
 
-## ⚠️ Challenges & Solutions
+##  Challenges & Solutions
 
 ### 1. **Dynamic chart switching**
 
@@ -106,12 +106,10 @@ src/
 
 
 
----
-
 ## 🧑‍💻 Author
 
 [Thanzia31](https://github.com/thanzia31)
 
-```
+
 
 
