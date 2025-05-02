@@ -5,18 +5,17 @@
 
 This project demonstrates how to integrate [Apache ECharts](https://echarts.apache.org/) into an Angular application using the `ngx-echarts` library. The app visualizes attendance data in multiple formats and includes a home page with introductory content about the system.
 
----
+
 
 ## 🚀 Project Setup & ECharts Integration
 
 ### 1. Angular Setup
 
 - Created a new Angular standalone project:
-  ```bash
+  
   ng new EchartApp --standalone
-````
 
-* Installed ECharts and `ngx-echarts`:
+- Installed ECharts and `ngx-echarts`:
 
   ```bash
   npm install echarts ngx-echarts
